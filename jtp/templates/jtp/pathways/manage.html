@@ -1,0 +1,397 @@
+{% extends 'jtp/base.html' %}
+{% load jtp_extras %}
+
+{% block title %}Manage Pathways — JTP Tracker{% endblock %}
+
+{% block content %}
+{% if needs_auth %}
+<div class="text-center mt-5 pt-5"><div class="spinner-border text-primary"></div></div>
+{% else %}
+
+<div class="d-flex justify-content-between align-items-center mb-4 mt-2">
+  <h4 class="mb-0"><i class="bi bi-map me-2"></i>Manage Pathways</h4>
+  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addCourseModal"
+          id="createPathwayBtn">
+    <i class="bi bi-plus-lg me-1"></i>New Pathway / Add Course
+  </button>
+</div>
+
+{% if not pathways_dict %}
+<div class="card shadow-sm">
+  <div class="card-body text-center py-5">
+    <i class="bi bi-map fs-1 text-muted"></i>
+    <h5 class="mt-3 text-muted">No pathways yet</h5>
+    <p class="text-muted">Click <strong>New Pathway / Add Course</strong> to create your first pathway.</p>
+  </div>
+</div>
+{% else %}
+
+<div class="accordion" id="pathwayAccordion">
+  {% for pname, data in pathways_dict.items %}
+  <div class="accordion-item shadow-sm mb-3 border"
+       id="pathway-block-{{ forloop.counter }}">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fw-semibold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pathway-content-{{ forloop.counter }}">
+        <i class="bi bi-map-fill text-primary me-2"></i>
+        {{ pname }}
+        <span class="badge bg-secondary ms-2">{{ data.courses|length }} course{{ data.courses|length|pluralize }}</span>
+        {% if data.owner_wwid %}
+          <span class="badge bg-light text-muted ms-2 small">
+            <i class="bi bi-person me-1"></i>{{ data.owner_wwid }}
+          </span>
+        {% endif %}
+      </button>
+    </h2>
+    <div id="pathway-content-{{ forloop.counter }}"
+         class="accordion-collapse collapse">
+      <div class="accordion-body p-0">
+
+        <!-- Pathway action bar -->
+        {% if data.can_modify %}
+        <div class="d-flex gap-2 p-3 bg-light border-bottom flex-wrap">
+          <button class="btn btn-sm btn-outline-primary add-course-to-pathway-btn"
+                  data-pathway="{{ pname }}">
+            <i class="bi bi-plus-circle me-1"></i>Add Course
+          </button>
+          <button class="btn btn-sm btn-outline-secondary edit-pathway-btn"
+                  data-pathway="{{ pname }}"
+                  data-owner="{{ data.owner_wwid }}">
+            <i class="bi bi-pencil me-1"></i>Edit Pathway
+          </button>
+          <button class="btn btn-sm btn-outline-danger delete-pathway-btn"
+                  data-pathway="{{ pname }}">
+            <i class="bi bi-trash me-1"></i>Delete Pathway
+          </button>
+        </div>
+        {% endif %}
+
+        <!-- Course table -->
+        <div class="table-responsive">
+          <table class="table table-hover mb-0 align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Course Name</th>
+                <th>Course ID</th>
+                <th>Type</th>
+                <th>Completion Time</th>
+                <th>Refresh Cycle</th>
+                {% if data.can_modify %}<th class="text-center">Actions</th>{% endif %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for course in data.courses %}
+              <tr>
+                <td class="fw-semibold">{{ course.course_name }}</td>
+                <td><code>{{ course.course_id|default:"—" }}</code></td>
+                <td>{{ course.course_type|course_type_badge }}</td>
+                <td>{{ course.expect_completion_time|format_days }}</td>
+                <td>{{ course.refresh_cycle|format_days }}</td>
+                {% if data.can_modify %}
+                <td class="text-center" style="white-space:nowrap">
+                  <button class="btn btn-sm btn-outline-secondary edit-course-btn me-1"
+                          data-course-id="{{ course.pk }}"
+                          data-pathway="{{ course.pathway_name }}"
+                          data-course-name="{{ course.course_name }}"
+                          data-course-id-val="{{ course.course_id }}"
+                          data-course-type="{{ course.course_type }}"
+                          data-expect="{{ course.expect_completion_time }}"
+                          data-refresh="{{ course.refresh_cycle|default:'' }}">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button class="btn btn-sm btn-outline-danger delete-course-btn"
+                          data-course-id="{{ course.pk }}"
+                          data-course-name="{{ course.course_name }}"
+                          data-pathway="{{ course.pathway_name }}">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+                {% endif %}
+              </tr>
+              {% empty %}
+              <tr>
+                <td colspan="{% if data.can_modify %}6{% else %}5{% endif %}"
+                    class="text-center text-muted py-3">
+                  No courses in this pathway yet.
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endif %}
+
+
+<!-- ── Add / Edit Course Modal ────────────────────────────────────────────── -->
+<div class="modal fade" id="addCourseModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courseModalTitle">
+          <i class="bi bi-plus-circle me-2"></i>Add Course to Pathway
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="editCourseId" value="">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Pathway Name <span class="text-danger">*</span></label>
+            <input type="text" id="coursePathwayName" class="form-control"
+                   placeholder="e.g. New Employee Onboarding"
+                   list="existingPathways">
+            <datalist id="existingPathways">
+              {% for pname in pathways_dict.keys %}
+              <option value="{{ pname }}">
+              {% endfor %}
+            </datalist>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Course Name <span class="text-danger">*</span></label>
+            <input type="text" id="courseCourseName" class="form-control" placeholder="e.g. Safety Awareness">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-semibold">Course ID</label>
+            <input type="text" id="courseCourseId" class="form-control" placeholder="e.g. 10023">
+            <div class="form-text">"Other" type defaults to ID 1.</div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-semibold">Course Type <span class="text-danger">*</span></label>
+            <select id="courseCourseType" class="form-select">
+              {% for ct in course_types %}
+              <option value="{{ ct }}">{{ ct }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-semibold">Owner WWID</label>
+            <input type="text" id="courseOwnerWwid" class="form-control" placeholder="Your WWID">
+            <div class="form-text">Leave blank to use your own WWID.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Completion Time <span class="text-danger">*</span></label>
+            <select id="courseExpectTime" class="form-select">
+              {% for days, label in expect_choices %}
+              <option value="{{ days }}">{{ label }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Refresh Cycle</label>
+            <select id="courseRefreshCycle" class="form-select">
+              <option value="">None</option>
+              {% for days, label in refresh_choices %}
+              {% if days %}
+              <option value="{{ days }}">{{ label }}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        <div id="courseModalError" class="alert alert-danger d-none mt-3 small py-2"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success" id="saveCourseBtn">
+          <i class="bi bi-check-lg me-1"></i>Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Edit Pathway Modal ─────────────────────────────────────────────────── -->
+<div class="modal fade" id="editPathwayModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-pencil me-2"></i>Edit Pathway</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="editPathwayOldName">
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Pathway Name</label>
+          <input type="text" id="editPathwayNewName" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Owner WWID</label>
+          <input type="text" id="editPathwayOwner" class="form-control">
+        </div>
+        <div id="editPathwayError" class="alert alert-danger d-none small py-2"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="savePathwayBtn">
+          <i class="bi bi-check-lg me-1"></i>Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const courseModal = new bootstrap.Modal(document.getElementById('addCourseModal'));
+const editPathwayModal = new bootstrap.Modal(document.getElementById('editPathwayModal'));
+
+// Pre-fill pathway when clicking "Add Course" inside a pathway accordion
+document.querySelectorAll('.add-course-to-pathway-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    resetCourseModal();
+    document.getElementById('coursePathwayName').value = this.dataset.pathway;
+    document.getElementById('courseModalTitle').innerHTML =
+      '<i class="bi bi-plus-circle me-2"></i>Add Course to Pathway';
+    courseModal.show();
+  });
+});
+
+// Edit course
+document.querySelectorAll('.edit-course-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    document.getElementById('editCourseId').value       = this.dataset.courseId;
+    document.getElementById('coursePathwayName').value  = this.dataset.pathway;
+    document.getElementById('courseCourseName').value   = this.dataset.courseName;
+    document.getElementById('courseCourseId').value     = this.dataset.courseIdVal;
+    document.getElementById('courseCourseType').value   = this.dataset.courseType;
+    document.getElementById('courseExpectTime').value   = this.dataset.expect;
+    document.getElementById('courseRefreshCycle').value = this.dataset.refresh || '';
+    document.getElementById('courseModalTitle').innerHTML =
+      '<i class="bi bi-pencil me-2"></i>Edit Course';
+    courseModal.show();
+  });
+});
+
+// Delete course
+document.querySelectorAll('.delete-course-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const id   = this.dataset.courseId;
+    const name = this.dataset.courseName;
+    showConfirm('Delete Course',
+      `Delete <strong>${name}</strong>? This will also remove it from employees who have not completed it.`,
+      () => {
+        postJSON(`/api/pathway/delete-course/${id}/`, {})
+          .then(d => {
+            if (d.success) { showToast('Course deleted.'); setTimeout(() => location.reload(), 800); }
+            else showToast(d.error, 'danger');
+          });
+      }
+    );
+  });
+});
+
+// Edit pathway
+document.querySelectorAll('.edit-pathway-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    document.getElementById('editPathwayOldName').value = this.dataset.pathway;
+    document.getElementById('editPathwayNewName').value = this.dataset.pathway;
+    document.getElementById('editPathwayOwner').value   = this.dataset.owner || '';
+    editPathwayModal.show();
+  });
+});
+
+document.getElementById('savePathwayBtn').addEventListener('click', function () {
+  const oldName  = document.getElementById('editPathwayOldName').value;
+  const newName  = document.getElementById('editPathwayNewName').value.trim();
+  const owner    = document.getElementById('editPathwayOwner').value.trim();
+  const errEl    = document.getElementById('editPathwayError');
+  errEl.classList.add('d-none');
+
+  postJSON('/api/pathway/edit/', { pathway_name: oldName, new_pathway_name: newName, owner_wwid: owner })
+    .then(d => {
+      if (d.success) { showToast('Pathway updated.'); setTimeout(() => location.reload(), 800); }
+      else { errEl.textContent = d.error; errEl.classList.remove('d-none'); }
+    });
+});
+
+// Delete pathway
+document.querySelectorAll('.delete-pathway-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const pname = this.dataset.pathway;
+    showConfirm('Delete Pathway',
+      `Delete the entire pathway <strong>${pname}</strong>? All pending employee assignments will be removed.`,
+      () => {
+        postJSON('/api/pathway/delete/', { pathway_name: pname })
+          .then(d => {
+            if (d.success) { showToast('Pathway deleted.'); setTimeout(() => location.reload(), 800); }
+            else showToast(d.error, 'danger');
+          });
+      }
+    );
+  });
+});
+
+// Save course (add or edit)
+document.getElementById('saveCourseBtn').addEventListener('click', function () {
+  const courseId   = document.getElementById('editCourseId').value;
+  const pathway    = document.getElementById('coursePathwayName').value.trim();
+  const courseName = document.getElementById('courseCourseName').value.trim();
+  const courseType = document.getElementById('courseCourseType').value;
+  const courseIdV  = document.getElementById('courseCourseId').value.trim();
+  const expect     = document.getElementById('courseExpectTime').value;
+  const refresh    = document.getElementById('courseRefreshCycle').value;
+  const owner      = document.getElementById('courseOwnerWwid').value.trim();
+  const errEl      = document.getElementById('courseModalError');
+  errEl.classList.add('d-none');
+
+  if (!pathway || !courseName) {
+    errEl.textContent = 'Pathway name and course name are required.';
+    errEl.classList.remove('d-none');
+    return;
+  }
+
+  const payload = {
+    pathway_name: pathway, course_name: courseName, course_type: courseType,
+    course_id: courseIdV, expect_completion_time: Number(expect),
+    refresh_cycle: refresh ? Number(refresh) : null, owner_wwid: owner,
+  };
+
+  const url = courseId
+    ? `/api/pathway/edit-course/${courseId}/`
+    : '/api/pathway/add-course/';
+
+  postJSON(url, payload).then(d => {
+    if (d.success) {
+      showToast(courseId ? 'Course updated.' : 'Course added.');
+      setTimeout(() => location.reload(), 800);
+    } else {
+      errEl.textContent = d.error;
+      errEl.classList.remove('d-none');
+    }
+  });
+});
+
+function resetCourseModal() {
+  document.getElementById('editCourseId').value       = '';
+  document.getElementById('coursePathwayName').value  = '';
+  document.getElementById('courseCourseName').value   = '';
+  document.getElementById('courseCourseId').value     = '';
+  document.getElementById('courseCourseType').value   = 'WBT';
+  document.getElementById('courseExpectTime').value   = '90';
+  document.getElementById('courseRefreshCycle').value = '';
+  document.getElementById('courseOwnerWwid').value    = '';
+  document.getElementById('courseModalError').classList.add('d-none');
+}
+
+// Auto-set course_id = 1 when type = Other
+document.getElementById('courseCourseType').addEventListener('change', function () {
+  if (this.value === 'Other') {
+    const cidEl = document.getElementById('courseCourseId');
+    if (!cidEl.value) cidEl.value = '1';
+  }
+});
+</script>
+{% endblock %}

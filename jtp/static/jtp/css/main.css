@@ -1,0 +1,96 @@
+/* ── JTP Training Tracker — Custom Styles ──────────────────────────────── */
+
+body {
+  font-size: 0.9rem;
+}
+
+/* Ensure content isn't hidden behind fixed navbar */
+main.container-fluid {
+  padding-top: 72px !important;
+}
+
+/* Sidebar card */
+.sticky-top {
+  z-index: 10;
+}
+
+/* Progress bar tweaks */
+.progress {
+  border-radius: 4px;
+}
+.progress-bar {
+  transition: width 0.5s ease;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+/* Accordion pathway header */
+.accordion-button:not(.collapsed) {
+  background-color: #e8f0fe;
+  color: #1a56db;
+}
+
+/* Course type badges */
+.badge {
+  font-weight: 500;
+}
+
+/* Table alignment */
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* Overdue row pulse */
+@keyframes pulse-danger {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.7; }
+}
+.table-danger td:first-child {
+  animation: pulse-danger 2s infinite;
+}
+
+/* Auth overlay */
+#auth-overlay {
+  backdrop-filter: blur(4px);
+}
+
+/* Small avatar circle */
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* DataTables integration */
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.dataTables_wrapper .dataTables_length select {
+  min-width: 75px !important;
+  padding-right: 2.25rem !important;
+}
+
+/* Responsive table card */
+.card .table-responsive {
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+/* Profile sidebar avatar */
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,95 @@
+{% extends 'jtp/base.html' %}
+{% load jtp_extras %}
+
+{% block title %}My Department — JTP Tracker{% endblock %}
+
+{% block content %}
+{% if needs_auth %}
+<div class="text-center mt-5 pt-5">
+  <div class="spinner-border text-primary"></div>
+</div>
+{% else %}
+
+<div class="mt-2">
+  <h4 class="mb-4"><i class="bi bi-building me-2"></i>Department Training Progress</h4>
+
+  {% if not by_dept %}
+  <div class="card shadow-sm">
+    <div class="card-body text-center py-5">
+      <i class="bi bi-building fs-1 text-muted"></i>
+      <h5 class="mt-3 text-muted">No department data available</h5>
+      <p class="text-muted">Training assignments have not been recorded yet.</p>
+    </div>
+  </div>
+  {% else %}
+
+  {% for dept_name, managers in by_dept.items %}
+  <div class="card shadow-sm mb-4 {% if dept_name == current_dept %}border-primary{% endif %}">
+    <div class="card-header d-flex align-items-center
+                {% if dept_name == current_dept %}bg-primary text-white{% else %}bg-light{% endif %}">
+      <i class="bi bi-diagram-3 me-2"></i>
+      <strong>{{ dept_name|default:"(No Department)" }}</strong>
+      {% if dept_name == current_dept %}
+        <span class="badge bg-white text-primary ms-2 small">Your Department</span>
+      {% endif %}
+    </div>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-hover mb-0 align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Manager</th>
+              <th class="text-center">Headcount</th>
+              <th class="text-center">100% Complete</th>
+              <th style="min-width:220px">Team Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for mgr in managers %}
+            <tr class="cursor-pointer" style="cursor:pointer"
+                onclick="window.location.href='{% url 'team_detail' mgr.mgr_wwid %}'">
+              <td>
+                <a href="{% url 'team_detail' mgr.mgr_wwid %}"
+                   class="fw-semibold text-decoration-none text-dark stretched-link-inner">
+                  {{ mgr.mgr_name|default:"—" }}
+                </a>
+                <div class="text-muted small">{{ mgr.org_unit_descr }}</div>
+              </td>
+              <td class="text-center">
+                <span class="badge bg-secondary fs-6">{{ mgr.total_members }}</span>
+                {% if mgr.team_size < mgr.total_members %}
+                  <div class="text-muted" style="font-size:0.72rem">{{ mgr.team_size }} assigned</div>
+                {% endif %}
+              </td>
+              <td class="text-center">
+                {% if mgr.team_size > 0 %}
+                  <span class="badge bg-success fs-6">{{ mgr.fully_complete_count }}</span>
+                  <span class="text-muted small">/ {{ mgr.team_size }}</span>
+                {% else %}
+                  <span class="text-muted small">—</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if mgr.team_size > 0 %}
+                <div class="d-flex align-items-center gap-2">
+                  <div class="flex-grow-1">{% progress_bar mgr.team_pct %}</div>
+                  <span class="fw-semibold small {% if mgr.team_pct == 100 %}text-success{% endif %}"
+                        style="min-width:36px">{{ mgr.team_pct }}%</span>
+                </div>
+                {% else %}
+                  <span class="text-muted small fst-italic">No pathways assigned yet</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% endif %}
+</div>
+{% endif %}
+{% endblock %}

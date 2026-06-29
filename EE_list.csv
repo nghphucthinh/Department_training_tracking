@@ -1,0 +1,379 @@
+EMPLOYEE_NAME,WWID,EMPLOYEE_EMAIL,MGR_WWID,MGR_EMAIL,ORG_UNIT_DESCR,ORG_LEVEL_DESC7,ROLE,MODULE
+"Au, Luong",11374379,luong.au@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,TCB
+"Bao, Ngoc Dang Khoa",12329324,ngoc.dang.khoa.bao@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Bui, Bach Khanh Duy",12337475,bach.khanh.duy.bui@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Bui, Duc Vuong",11411246,duc.vuong.bui@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Bui, Quan Thanh Thien",12337355,quan.thanh.thien.bui@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Bui, Trung",11577238,xuan.trung.bui@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Bui, Viet Truong Thieu",12337072,viet.truong.thieu.bui@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Can, Minh Hieu",12354867,minh.hieu.can@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Cao, Minh Chanh",11374038,minh.chanh.cao@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Cao, Quoc Cuong",11785607,quoc.cuong.cao@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Cao, Van Manh",11908531,van.manh.cao@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Chau, Thi Yen Nhu",11779904,thi.yen.nhu.chau@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Chu, Van Dinh",11910040,van.dinh.chu@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Dam, Quoc Cuong",11898466,quoc.cuong.dam@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Dang, Minh Hieu",11953503,minh.hieu.dang@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Dang, Minh Quang",11381264,minh.quang.dang@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Dang, Viet Toan",12356997,viet.toan.dang@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Dao, Cong Ly",11412111,cong.ly.dao@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Diep, Tu Quan",11636837,tu.quan.diep@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Dinh, Duc Hung",12354225,duc.hung.dinh@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Dinh, Le Quoc Vuong",11833678,le.quoc.vuong.dinh@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Dinh, Quoc Huy",12121656,quoc.huy.dinh@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Dinh, Vu Thanh Dat",11901184,vu.thanh.dat.dinh@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Do, Dinh Hung Anh",11765341,dinh.hung.anh.do@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Do, Hong Sang",11956804,hong.sang.do@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Do, Ngoc Tan",11793387,ngoc.tan.do@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Do, The Huy",11871261,the.huy.do@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Do, Tri Dung",11761769,tri.dung.do@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Do, Truong Giang",11340773,truong.giang.do@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Do, Van Duong",11763519,van.duong.do@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Do, Viet Ngung",11435484,viet.ngung.do@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Doan, Huu Thuyet",12332561,huu.thuyet.doan@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Doan, Linh Lam",12232832,linh.lam.doan@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Doan, Minh Nhut",11753131,minh.nhut.doan@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Doan, Ngoc Tai",12354120,ngoc.tai.doan@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Doan, Thi Nho",11619385,thi.nho.doan@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Doan, Van Chuc",11940730,van.chuc.doan@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Duong, Huong Giang",12332570,huong.giang.duong@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Duong, Huu Kha",11910025,huu.kha.duong@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Duong, Thi Thuy Linh",11577547,thi.thuy.linh.duong@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Duong, Thuan Phat",11756275,thuan.phat.duong@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Duong, Trung Hieu",11765689,trung.hieu.duong@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Giang, Thanh Tuan",12121727,thanh.tuan.giang@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Ha, Quyet Thang",11789605,quyet.thang.ha@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Ho, Bao Quoc",11864255,bao.quoc.ho@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Ho, Canh Thinh",11765533,canh.thinh.ho@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Ho, Chon Chuong",11755732,chon.chuong.ho@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Ho, Duy Toan",12348240,duy.toan.ho@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Ho, Huy Cuong",11754331,huy.cuong.ho@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Ho, The Hien",11864391,the.hien.ho@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Ho, Thi Nhu Phuong",11577561,thi.nhu.phuong.ho@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Hoang, Anh",12348239,anh.hoang@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Hoang, Kim Khanh",11379069,kim.khanh.hoang@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Hoang, Minh Trung",11911282,minh.trung.hoang@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Hoang, Ngoc Thao",11568249,ngoc.thao.hoang@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Hoang, Nguyen Khoi",11784995,nguyen.khoi.hoang@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Hoang, Nguyet Ha",12101076,nguyet.ha.hoang@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Hoang, Quoc Nam",11410867,quoc.nam.hoang@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Hoang, Thanh Binh",11722189,thanh.binh.hoang@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Hoang, Van Hien",11529140,van.hien.hoang@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Hoang, Van Hoang",11966492,van.hoang.hoang@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Hoang, Van Son",11778167,van.son.hoang@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Hoang, Xuan Trieu",11840780,xuan.trieu.hoang@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Huynh Thi, Kim Ngoc",11577574,kim.ngoc.huynh.thi@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Huynh, Duy Khanh",11615267,duy.khanh.huynh@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Huynh, Hai Duy",12354363,hai.duy.huynh@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Huynh, Ly Thanh Huy",11636864,ly.thanh.huy.huynh@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Huynh, Ngoc Anh Minh",11577564,ngoc.anh.minh.huynh@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Huynh, Quoc Dung",11722157,quoc.dung.huynh@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Huynh, Tan Hao",11710068,tan.hao.huynh@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Huynh, Thanh Son",11785795,thanh.son.huynh@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Huynh, Thanh Vu",11374017,thanh.vu.m.huynh@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Huynh, Trung Nhan",11413799,trung.nhan.huynh@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Khuu, Tung Quang",12324450,tung.quang.khuu@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Kien, Truong Dang Khoa",11937065,truong.dang.khoa.kien@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Kim, Nguyen Tuan Dat",11789603,nguyen.tuan.dat.kim@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Lai, Manh Hung",11908536,manh.hung.lai@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Lai, The Anh",12349749,the.anh.lai@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Lam, Quoc Su",11955501,quoc.su.lam@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Lam, Trong Khang",12327386,trong.khang.lam@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Lam, Van Thanh",11773140,van.thanh.lam@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Le, Cong Dung",11713157,cong.dung.le@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Le, Dinh Ba Tri",11374022,dinh.ba.tri.le@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Le, Dinh Huy",11769771,dinh.huy.le@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Le, Duc Tai",11789629,duc.tai.le@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Le, Duong Can",12327910,duong.can.le@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Le, Duy Bau",12012807,duy.bau.le@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Le, Hoang Van",11910042,hoang.van.le@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Le, Hong Ngoc Anh",11781572,hong.ngoc.anh.le@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Huyen Trang",11708336,huyen.trang.le@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Minh Chanh",11571958,minh.chanh.le@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Minh Thanh",11902750,minh.thanh.le@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Le, Minh Thuat",11953889,minh.thuat.le@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Nguyen Hoang Tan",11410860,nguyen.hoang.tan.le@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Le, Nhat Khanh",11413794,nhat.khanh.le@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Quang Truong",12012826,quang.truong.le@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Le, Quang Tu",11954164,quang.tu.le@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Le, Quoc Cuong",11411258,quoc.cuong.le@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Le, Son Quan",11339882,son.quan.le@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Le, Tan Loc",12094139,tan.loc.le@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Le, Thanh Giau",11410896,thanh.giau.le@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Le, Thanh Nghi",11864644,thanh.nghi.le@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Thi Hoai Dung",11621946,thi.hoai.dung.le@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Le, Thi Thu Thuy",11791812,thi.thu.thuy.le@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Le, Tien Dat",11749144,tien.dat.le@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Trong  Dat",11955498,trong.dat.le@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Le, Truong Duy",11793603,truong.duy.le@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Van Duong",12354865,van.duong.le@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Le, Van Huy",11722199,van.huy.le@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Van Huy",11966986,van1.huy.le@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Le, Van Ky",11722203,van.ky.le@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Van Pha",12336462,van.pha.le@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Van Quang",11864034,van.quang.le@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Van Thanh",11722206,van.thanh.le@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Van Tien",11774162,van.tien.le@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Le, Van Tin",11777490,van.tin.le@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Le, Viet Chung",11718524,viet.chung.le@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Luong, Van Sy",11341198,van.sy.luong@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Luu, Hoang Tu",11374351,hoang.tu.luu@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Luu, Huu Nghia",11789656,huu.nghia.luu@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Mai, Huu Tam",11957807,huu.tam.mai@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Mai, Thanh Tung",12349748,thanh.tung.mai@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Mai, Thi Ngoc Bich",11636564,thi.ngoc.bich.mai@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Mai, Thien An",11804357,thien.an.mai@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,MHS
+"Mai, Trong Khang",11958095,trong.khang.mai@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Mai, Van Canh",11936844,van.canh.mai@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Mai, Viet Thao",12094552,viet.thao.mai@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Ngo, Quoc Viet",11529133,quoc.viet.ngo@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Ngo, Thanh Son",11411388,thanh.son.ngo@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Anh Huy",11797697,anh.huy1.nguyen@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Anh Kiet",11864403,anh.kiet.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Binh",11749361,binh1.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Cao Son",11922789,cao.son1.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Cong Danh",12331291,cong.danh.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Dai An",11723240,dai.an.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Dang Bao Loc",11379073,dang.bao.loc.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Dang Khoi",11770719,dang.khoi.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Dang Quang",11374170,dang.quang.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,CAM/SLAM
+"Nguyen, Dang Quoc Anh",11530067,dang.quoc.anh.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,EPX
+"Nguyen, Danh",11943036,danh1.nguyen@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Nguyen, Dinh Tuan",11722214,dinh.tuan.nguyen@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Duc Anh Trung",11864619,duc.anh.trung.nguyen@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Duc Huy",11957799,duc.huy1.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Duong Hoang Vu",11914194,duong.hoang.vu.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Duy Kha",11942896,duy.kha.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Duy Thanh",11911284,duy.thanh6.nguyen@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Duy Thinh",11942152,duy.thinh.nguyen@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Ha Minh Chau",12339611,ha.minh.chau.nguyen@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Nguyen, Hai Dang",11337405,hai.dang.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Hoang Anh Kiet",11965431,hoang.anh.kiet.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Hoang Anh Tuan",11908533,hoang.anh.tuan.a.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Hoang Loc",12327625,hoang.loc.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Hoang Phuc",11577071,hoang.phuc.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Hoang Phuc Thinh",11748293,hoang.phuc.thinh.nguyen@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Nguyen, Hoang Quan",11753802,hoang.quan.nguyen@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Nguyen, Hoang Sum",11869417,hoang.sum.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Hong Phuoc",11374363,hong.phuoc.nguyen@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Nguyen, Hong Son",11832824,hong.son.nguyen@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Nguyen, Huu Hung",11749151,huu.hung.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Huu Huy",11789606,huu.huy.nguyen@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Huu Phi Phong",11761770,huu.phi.phong.nguyen@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Huu Phuoc Tho",11774163,huu.phuoc.tho.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Huu Tinh",11763525,huu.tinh.nguyen@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Huynh Dang Hung",12337354,huynh.dang.hung.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Huynh Minh Quan",11830444,huynh.minh.quan.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Khac Hau",11374023,khac.hau.nguyen@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Khanh Nam",12337453,khanh.nam.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Khanh Vinh",12101075,khanh.vinh.nguyen@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Nguyen, Kim Hoang",11781628,kim.hoang.nguyen@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Le Duy Tuan",11773961,le.duy.tuan.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Le Truc Khanh",11869741,le.truc.khanh.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Le Xuan Phong",11779905,le.xuan.phong.nguyen@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Minh Duy",12327379,minh.duy.nguyen@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Minh Khoa",11569547,minh.khoa.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Minh Ky",11761240,minh.ky.nguyen@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Ngoc Duc",11722142,ngoc.duc.nguyen@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Ngoc Nhan",11785791,ngoc.nhan.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Ngoc Tu",11904283,ngoc.tu.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Nguyen Thong",11741079,nguyen.thong.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Nguyen Tri",12331389,nguyen.tri.nguyen@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Nhan",11763537,huu.nhan.nguyen@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Nhat Thao",11776517,nhat.thao.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Pham Anh Vu",12350894,pham.anh.vu.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Phuc Tam",11834456,phuc.tam.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Phuong Thanh",11571951,phuong.thanh.nguyen@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Quoc Anh",11529285,quoc.anh.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Quoc Anh",11751787,quoc.anh1.nguyen@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Nguyen, Quoc Bao",11410872,quoc.bao.m.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Quoc Dung",11783010,nguyen.quoc.dung@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Quoc Huy",11775476,quoc.huy.p.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Quoc Vu",11708668,quoc.vu.nguyen@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Tan Sang",11571963,tan.sang.nguyen@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Tan Sinh",12327653,tan.sinh.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Thai Trong",11937063,thai.trong.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Thanh Binh",11338193,thanh.binh.nguyen@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Nguyen, Thanh Dai",11785809,thanh.dai.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Thanh Duy",12331217,thanh1.duy.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Thanh Loc",11907048,thanh.loc.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Thanh Long",11413842,thanh.long.nguyen@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Thanh Long",11568251,thanh.long1.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Thanh Nhan",12327522,thanh.nhan.nguyen@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Thanh Tam",11722887,thanh.tam1.nguyen@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Thanh Toai",11722179,thanh.toai.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Thanh Toan",11761171,thanh.toan1.nguyen@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Nguyen, Thanh Trung",11754829,thanh.trung.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Thanh Tuan",11916996,thanh.tuan.p.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, The Dai",12330614,the.dai.nguyen@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Nguyen, The Phi",11963584,the.phi.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, The Thuong",11722198,the.thuong.nguyen@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Thi Cam Tien",11910327,thi.cam.tien.nguyen@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Nguyen, Thi Dai Trang",11789636,thi.dai.trang.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Thi Huong Tram",12088521,thi.huong.tram.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Thi Khanh Trinh",11489260,thi.khanh.trinh.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Thi Kim Phung",11776519,thi.kim.phung.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Thi Ngoc Han",11884457,thi.ngoc.han2.nguyen@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Nguyen, Thi Ngoc Hong",11637003,thi.ngoc.hong.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Thi Ngoc Phuc",11529519,thi.ngoc.phuc.nguyen@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Nguyen, Thi Thanh Nha",11409048,thi.thanh.nha.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Thi Thuy Trang",11864393,thi.thuy.trang.nguyen@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Thien Phu",12343472,thien.phu.nguyen@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Nguyen, Tran Hoang Duy",11744971,tran.hoang.duy.nguyen@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Tran Xuan Hung",11869457,tran.xuan.hung.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Trong Minh",11957961,trong.minh.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Trong Nghia",11791858,trong.nghia.a.nguyen@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Trong Thai",11910137,trong.thai.nguyen@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Nguyen, Trung Nhan",11776520,trung.nhan.nguyen@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Truong Duy",12333307,truong.duy.nguyen@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Nguyen, Truong Huy",11919929,truong.huy.nguyen@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Tuan Kiet",12304635,tuan.kiet.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Tuan Phat",11956963,tuan.phat.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Chien",11302642,van.chien.nguyen@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Nguyen, Van Chuc",11912420,van.chuc.nguyen@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Van Cuong",12122198,van.cuong.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Hai",11709334,van.hai.nguyen@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Van Khai",11909928,van.khai.nguyen@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Nguyen, Van Khanh",11379063,van.khanh.nguyen@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Van Ky",11920464,van.ky.nguyen@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Nguyen, Van Nghia",11713481,van.nghia.a.nguyen@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Nghia",11781548,van.nghia.nguyen@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Tam",11764554,van.tam.nguyen@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Van Tau",11956937,van1.tau.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Thang",11865830,van.thang.nguyen@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Van Thong",11922747,van.thong.nguyen@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Nguyen, Van Thuan",11763571,van.thuan.nguyen@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Tin",11904261,van.tin.b.nguyen@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Nguyen, Van Trieu",11680528,van.trieu.nguyen@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Tuan",11938109,van.tuan2.nguyen@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Van Vuong",11911281,van.vuong.nguyen@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Nguyen, Viet Song",11680180,viet.song.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Vu Bao",11793372,vu.bao.a.nguyen@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Nguyen, Vu Phuc Toan",11785261,vu.phuc.toan.nguyen@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Nguyen, Vu Quoc",11907380,vu.quoc.nguyen@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Pham, Dinh Minh",11940542,dinh.minh.pham@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Pham, Duc Van",11722216,duc.van.pham@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Pham, Hoan",12354738,hoan.pham@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Pham, Hoang Phi Long",11640163,hoang.phi.long.pham@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Pham, Hoang Trung Hieu",11873671,hoang.trung.hieu.pham@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Pham, Hoang Vuong",11936849,hoang.vuong.pham@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Pham, Hong Hai",11881307,hong.hai.pham@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Pham, Huu Thanh",12326827,huu.thanh.pham@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Pham, Minh Thanh",11374169,minh.thanh.pham@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Pham, Nguyen Hong",11921252,nguyen.hong.pham@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Pham, Phuc Thai",11407240,phuc.thai.pham@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Pham, Quoc Hoang Huy",11869619,quoc.hoang.huy.pham@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Pham, Tan Thong",11914197,tan.thong.pham@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Pham, Thanh Long",12094149,thanh1.long.pham@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Pham, Thanh My",11577456,thanh.my.pham@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Pham, The Vinh",12327339,the.vinh.pham@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Pham, Thi Anh Dao",11577078,thi.anh.dao.pham@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Pham, Thi Tha",11713165,thi.tha.pham@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Pham, Thi Vien Dung",11781577,thi.vien.dung.pham@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Pham, Truong Son",11722201,truong.son.pham@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Pham, Van Hue",11722205,van.hue.pham@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Pham, Van Huy",11722113,van.huy.pham@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Pham, Van Phong",11936807,van.phong.pham@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Phan, Anh Tuan",11781826,anh.tuan1.phan@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Phan, Chi Cao",11906087,chi.cao.phan@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Phan, Duy Sinh",11879333,duy.sinh.phan@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Phan, Hoang Phat",12329488,hoang.phat.phan@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Phan, Minh Man",11872099,minh.man.phan@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Phan, Nguyen Tan Vu",12355399,nguyen.tan.vu.phan@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Phan, Quoc Kha",11789639,quoc.kha.phan@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Phan, Quoc Viet",11622468,quoc.viet.phan@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Phan, Suong Hung",11869413,suong.hung.phan@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Phan, Thanh Diet",11722119,thanh.diet.phan@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Phan, Thanh Duy Khang",11907382,thanh.duy.khang.phan@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Phan, Thanh Son",11569546,thanh.son.phan@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Phun, Thi Cam Y",11869783,thi.cam.y.phun@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Quach, Van Ky",11854675,van.ky.quach@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"TRAN, DINH KHANG",12012828,dinh.khang.tran@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Ta, Xuan Huy",11785815,xuan.huy.ta@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Thai, Hien Nhi",12351666,hien.nhi.thai@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Thai, Hoai Long",11577072,hoai.long.thai@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Thong, Vuong Trung",11782325,vuong.trung.thong@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Ton, Cong Ly",11568250,cong.ly.ton@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Tran, Anh Tuan",11908989,anh.tuan.tran@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Tran, Anh Vu",11782297,anh.vu.tran@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Cong Hau",11785810,cong.hau.tran@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Tran, Dang Tung",11660089,dang.tung.tran@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Dinh Nhat",11775475,dinh.nhat.tran@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Tran, Duc Duy",11954779,duc.duy.tran@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Tran, Gia Vinh An",11761157,gia.vinh.an.tran@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Tran, Ho Vu",11447054,ho.vu.tran@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Tran, Hoang Sa",11763722,hoang.sa.tran@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Tran, Hong Minh",11374349,hong.minh.tran@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Tran, Huy Thien",11741213,huy.thien.tran@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Tran, Kim Thao Nguyen",11302754,kim.thao.nguyen.tran@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Tran, La Quoc Thai",11722720,la.quoc.thai.tran@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Le Huy",11340799,le.huy.tran@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Tran, Nam Hung",11869388,nam.hung.tran@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Tran, Ngoc Cuong",11930346,ngoc.cuong.tran@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Ngoc Dung",11940737,ngoc.dung.tran@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Tran, Nguyen Khoa",12327521,nguyen.khoa.tran@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Tran, Nhu Nguyen",11881262,nhu.nguyen.tran@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Tran, Phu Qui",11411390,phu.qui.tran@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Tran, Phu Vinh",11341215,phu.vinh.tran@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Tran, Phuc Thinh",12331392,phuc.thinh.tran@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Tran, Quang Nhat",12031205,quang.nhat.tran@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Tran, Quang Nhi",11743472,quang.nhi.tran@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Tran, Quang Toan",11914192,quang.toan.tran@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Tran, Quoc Bao Toan",11304292,quoc.bao.toan.tran@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Tran, Quoc Thi",11681775,quoc.thi.tran@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Tran, Quyen Thanh",11577581,quyen.thanh.tran@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Tran, Thanh Hieu",11722221,thanh.hieu.tran@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Thanh Hoai",11789867,thanh.hoai.tran@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Tran, Thanh Lam",11763723,thanh.lam.tran@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Tran, Thi Bich Tram",11636861,thi.bich.tram.tran@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Tran, Thi Huong",11637888,thi.huong.tran@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Thi Thanh Tuyen",11673838,thi.thanh.tuyen.tran@intel.com,11337418,thi.thanh.thuy.vu@intel.com,SB-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Tran, Thi Thao Nu",11374858,thi.thao.nu.tran@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Tran, Thi Thu Ngan",11577566,thi.thu.ngan.tran@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Tran, Tri Tai",11722213,tri.tai.tran@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Tran, Trong Khiem",11766008,trong.khiem.tran@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Tran, Trong Nhan",11924759,trong.nhan.tran@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Van Chuc",11916995,van.chuc.tran@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Van Dung",11938063,van.dung.tran@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Tran, Van Hoc",12329290,van.hoc.tran@intel.com,11871255,duc.le.truong@intel.com,SC-AF TEG (P1-FOL),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Tran, Van Khan",12013964,van.khan.tran@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Tran, Van Tam",11341332,van.tam.tran@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Tran, Van Toan",11786674,van.toan.tran@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Tran, Van Tri",11930345,van.tri.tran@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Tran, Van Trung",11740420,van.trung.a.tran@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Tran, Van Tuan",11964603,van1.tuan.tran@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Tran, Vuong Quoc Toan",11788651,vuong.quoc.toan.tran@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Trinh, Duc Huy",11717656,duc.huy.trinh@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Truong, Duc Le",11871255,duc.le.truong@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Truong, Hoang Linh",11874435,hoang.linh.truong@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Truong, Hoang Phuc",11921745,hoang.phuc.truong@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Truong, Minh Qui",12122151,minh.qui.truong@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Truong, Minh Y",11954085,minh.y.truong@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Truong, Phi Long",11904281,phi.long.truong@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Truong, Tan Luc",11413844,tan.luc.truong@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Truong, Vu Dong",11792074,vu.dong.truong@intel.com,11833678,le.quoc.vuong.dinh@intel.com,SD-AF TEG (P2-TCB),AF TEG DEPARTMENT,ES,TCB
+"Truong, Xuan Hong",11763496,xuan.hong.truong@intel.com,11869413,suong.hung.phan@intel.com,SD-AF TEG (P1-CAM),AF TEG DEPARTMENT,ES,CAM/SLAM
+"Ung, Viet Khanh",11775479,viet.khanh.ung@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Van, Tien Phi",11872356,tien.phi.van@intel.com,11374017,thanh.vu.m.huynh@intel.com,SA-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Vo, Anh Dung",11337601,anh.dung.vo@intel.com,11336094,quang.khanh.nguyen@intel.com,VNAT Factory 2,,DM,
+"Vo, Anh Truc Linh",11768940,anh.truc.linh.vo@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Vo, Dang Thi",11571952,dang.thi.vo@intel.com,11804357,thien.an.mai@intel.com,AF TEG MHS FIN,AF TEG DEPARTMENT,EqE,MHS
+"Vo, Duc Quoc Bao",11727822,duc.quoc.bao.vo@intel.com,11374170,dang.quang.nguyen@intel.com,AF TEG CAM SLAM,AF TEG DEPARTMENT,EqE,CAM/SLAM
+"Vo, Hoang Viet",11865874,hoang.viet.vo@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Vo, Hung Anh",11763494,hung.anh.vo@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Vo, Kim Lan",11407287,kim.lan.vo@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Vo, Nguyen Thanh Nhan",11714567,nguyen.thanh.nhan.vo@intel.com,11530067,dang.quoc.anh.nguyen@intel.com,AF TEG EPX DLA,AF TEG DEPARTMENT,EqE,EPX
+"Vo, Phuong Tung",11904286,phuong.tung.vo@intel.com,11374349,hong.minh.tran@intel.com,SC-AF TEG (P2-FOL),AF TEG DEPARTMENT,ES,TCB
+"Vo, Qui Phong",11680018,qui.phong.vo@intel.com,11869457,tran.xuan.hung.nguyen@intel.com,SB-AF TEG CAM,AF TEG DEPARTMENT,ES,CAM/SLAM
+"Vo, Quoc Toan",11904282,quoc.toan.vo@intel.com,11568251,thanh.long1.nguyen@intel.com,SD-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Vo, Tan Phuc",11910041,tan.phuc1.vo@intel.com,11785261,vu.phuc.toan.nguyen@intel.com,SC-AF TEG (P1-EPX),AF TEG DEPARTMENT,ES,EPX
+"Vo, Thai Bao",11957722,thai.bao.vo@intel.com,11409048,thi.thanh.nha.nguyen@intel.com,SB-AF TEG (P1-DLA),AF TEG DEPARTMENT,ES,EPX
+"Vo, Thanh Sang",11835688,thanh.sang.vo@intel.com,12088521,thi.huong.tram.nguyen@intel.com,SD-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Vo, Thi Ngoc Diem",11621945,thi.ngoc.diem.vo@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Vo, Van Huy",11902748,van.huy.vo@intel.com,11374022,dinh.ba.tri.le@intel.com,SB-AF TEG TCB P2  core,AF TEG DEPARTMENT,ES,TCB
+"Vu, Minh Hoang",11806760,minh.hoang1.vu@intel.com,11411390,phu.qui.tran@intel.com,SC-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS
+"Vu, Ngoc Gia Huy",12339349,ngoc.gia.huy.vu@intel.com,11374379,luong.au@intel.com,AF TEG TCB,AF TEG DEPARTMENT,EqE,TCB
+"Vu, Thi Thanh Thuy",11337418,thi.thanh.thuy.vu@intel.com,11337601,anh.dung.vo@intel.com,AF TEG DEPARTMENT,AF TEG DEPARTMENT,Staff,
+"Vu, Van Duc",11786838,van.duc.vu@intel.com,11411258,quoc.cuong.le@intel.com,SA-AF TEG TCB P2,AF TEG DEPARTMENT,ES,TCB
+"Vu, Van Truong",11763497,van.truong.vu@intel.com,11337405,hai.dang.nguyen@intel.com,SA-AF TEG EPX MOLD,AF TEG DEPARTMENT,ES,EPX
+"Vu, Xuan Thang",11571392,xuan.thang.vu@intel.com,11410860,nguyen.hoang.tan.le@intel.com,SA-AF TEG MHS FIN,AF TEG DEPARTMENT,ES,MHS

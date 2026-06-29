@@ -1,0 +1,258 @@
+{% extends 'jtp/base.html' %}
+{% load jtp_extras %}
+
+{% block title %}{{ employee.name }} — JTP Tracker{% endblock %}
+
+{% block content %}
+{% if needs_auth %}
+<div class="text-center mt-5 pt-5"><div class="spinner-border text-primary"></div></div>
+{% else %}
+
+<div class="mb-3">
+  <a href="{{ back_url }}" class="btn btn-sm btn-outline-secondary">
+    <i class="bi bi-arrow-left me-1"></i>Back to My Team
+  </a>
+</div>
+
+<div class="row g-4">
+
+  <!-- Sidebar -->
+  <div class="col-lg-3 col-md-4">
+    <div class="card shadow-sm sticky-top" style="top:80px">
+      <div class="card-header bg-primary text-white">
+        <i class="bi bi-person-badge me-2"></i>Employee Profile
+      </div>
+      <div class="card-body small">
+        <div class="d-flex align-items-center mb-3">
+          <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3"
+               style="width:48px;height:48px;font-size:1.2rem;flex-shrink:0">
+            {{ employee.name|slice:":1"|upper }}
+          </div>
+          <div>
+            <div class="fw-bold fs-6">{{ employee.name|default:"—" }}</div>
+            <div class="text-muted">{{ employee.email|default:"—" }}</div>
+          </div>
+        </div>
+        <hr class="my-2">
+        <table class="table table-sm table-borderless mb-0">
+          <tr><td class="text-muted">WWID</td><td class="fw-semibold">{{ employee.wwid|default:"—" }}</td></tr>
+          <tr><td class="text-muted">Manager</td><td>{{ employee.mgr_name|default:"—" }}</td></tr>
+          <tr><td class="text-muted">Org Unit</td><td>{{ employee.org_unit_descr|default:"—" }}</td></tr>
+          <tr><td class="text-muted">Department</td><td>{{ employee.org_level_desc7|default:"—" }}</td></tr>
+        </table>
+      </div>
+      {% if pathways %}
+      <div class="card-footer bg-light">
+        <div class="small text-muted mb-1 fw-semibold">Progress Summary</div>
+        {% for pname, data in pathways.items %}
+        <div class="mb-2">
+          <div class="d-flex justify-content-between small mb-1">
+            <span class="text-truncate" style="max-width:160px" title="{{ pname }}">{{ pname }}</span>
+            <span class="fw-semibold {% if data.is_fully_complete %}text-success{% endif %}">
+              {{ data.percentage }}%
+            </span>
+          </div>
+          {% progress_bar data.percentage small=True %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Main content (same as index.html courses layout) -->
+  <div class="col-lg-9 col-md-8">
+
+    {% if no_assignments %}
+    <div class="card shadow-sm">
+      <div class="card-body text-center py-5">
+        <i class="bi bi-inbox fs-1 text-muted"></i>
+        <h5 class="mt-3 text-muted">No training assigned</h5>
+      </div>
+    </div>
+    {% else %}
+
+    {% for pname, data in pathways.items %}
+    <div class="card shadow-sm mb-4">
+      <div class="card-header d-flex justify-content-between align-items-center
+                  {% if data.is_fully_complete %}bg-success text-white{% else %}bg-white{% endif %}">
+        <div><i class="bi bi-map-fill me-2"></i><strong>{{ pname }}</strong></div>
+        <div class="d-flex align-items-center gap-3">
+          <span class="badge {% if data.is_fully_complete %}bg-light text-success{% else %}bg-primary{% endif %} fs-6">
+            {{ data.completed }}/{{ data.total }}
+          </span>
+          <div style="width:120px">{% progress_bar data.percentage %}</div>
+          {% if viewing_as_manager %}
+          <button class="btn btn-sm btn-outline-danger unassign-pathway-btn"
+                  data-pathway-name="{{ pname }}"
+                  data-employee-wwid="{{ employee.wwid }}"
+                  title="Unassign this pathway">
+            <i class="bi bi-x-circle me-1"></i>Unassign
+          </button>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-hover mb-0 align-middle">
+            <thead class="table-light">
+              <tr>
+                <th style="width:32px"></th>
+                <th>Course</th>
+                <th>Type</th>
+                <th>Assigned</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th class="text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for course in data.courses %}
+              <tr class="{% if course.is_completed %}table-success{% elif course.is_overdue %}table-danger{% endif %}"
+                  id="course-row-{{ course.id }}">
+                <td class="text-center">
+                  {% if course.is_completed %}
+                    <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  {% elif course.is_overdue %}
+                    <i class="bi bi-exclamation-circle-fill text-danger fs-5"></i>
+                  {% else %}
+                    <i class="bi bi-circle text-secondary fs-5"></i>
+                  {% endif %}
+                </td>
+                <td class="fw-semibold">{{ course.course_name }}</td>
+                <td>{{ course.course_type|course_type_badge }}</td>
+                <td>{{ course.assigned_date|date:"M d, Y"|default:"—" }}</td>
+                <td>
+                  {% if course.refresh_date and course.is_completed %}
+                    <span class="text-muted small">
+                      <i class="bi bi-arrow-repeat me-1"></i>{{ course.refresh_date|date:"M d, Y" }}
+                    </span>
+                  {% else %}
+                    {{ course.due_date|date:"M d, Y"|default:"—" }}
+                  {% endif %}
+                </td>
+                <td id="status-cell-{{ course.id }}">
+                  {% if course.is_completed %}
+                    <span class="badge bg-success">
+                      <i class="bi bi-check2 me-1"></i>{{ course.completion_display }}
+                    </span>
+                    {% if course.refresh_due %}
+                      <span class="badge bg-warning text-dark ms-1">Refresh Due</span>
+                    {% endif %}
+                  {% else %}
+                    <span class="badge bg-secondary">Pending</span>
+                    {% if course.is_overdue %}<span class="badge bg-danger ms-1">Overdue</span>{% endif %}
+                  {% endif %}
+                </td>
+                <td class="text-center" style="white-space:nowrap">
+                  {# Manager/admin can also confirm ILT/Other on behalf of the employee #}
+                  {% if course.can_manual_confirm %}
+                  <button class="btn btn-sm btn-outline-success mark-complete-btn me-1"
+                          data-status-id="{{ course.id }}"
+                          data-course-name="{{ course.course_name }}">
+                    <i class="bi bi-check-circle me-1"></i>Mark Complete
+                  </button>
+                  {% endif %}
+                  {% if viewing_as_manager %}
+                  <button class="btn btn-sm btn-outline-danger remove-course-btn"
+                          data-status-id="{{ course.id }}"
+                          data-course-name="{{ course.course_name }}"
+                          title="Remove this course">
+                    <i class="bi bi-trash3"></i>
+                  </button>
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    {% endif %}
+  </div>
+</div>
+
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.querySelectorAll('.mark-complete-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const statusId   = this.dataset.statusId;
+    const courseName = this.dataset.courseName;
+    showConfirm('Mark Course Complete',
+      `Confirm completion of <strong>${courseName}</strong> for this employee?`,
+      () => markCourseComplete(statusId, btn)
+    );
+  });
+});
+
+function markCourseComplete(statusId, btn) {
+  postJSON('{% url "api_mark_complete" %}', { status_id: statusId })
+    .then(data => {
+      if (data.success) {
+        document.getElementById(`course-row-${statusId}`).classList.add('table-success');
+        document.getElementById(`status-cell-${statusId}`).innerHTML =
+          `<span class="badge bg-success"><i class="bi bi-check2 me-1"></i>${data.completion_display}</span>`;
+        btn.remove();
+        showToast('Course marked as complete!');
+        setTimeout(() => location.reload(), 1500);
+      } else {
+        showToast(data.error || 'Error.', 'danger');
+      }
+    });
+}
+
+// ── Unassign pathway ─────────────────────────────────────────────────────────
+document.querySelectorAll('.unassign-pathway-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const pathwayName  = this.dataset.pathwayName;
+    const employeeWwid = this.dataset.employeeWwid;
+    showConfirm('Unassign Pathway',
+      `Remove all pending courses in <strong>${pathwayName}</strong> from this employee? Completed records are preserved.`,
+      () => unassignPathway(pathwayName, employeeWwid)
+    );
+  });
+});
+
+function unassignPathway(pathwayName, employeeWwid) {
+  postJSON('{% url "api_remove_pathway" %}', { pathway_name: pathwayName, employee_wwid: employeeWwid })
+    .then(data => {
+      if (data.success) {
+        showToast(`Pathway "${pathwayName}" unassigned.`);
+        setTimeout(() => location.reload(), 1000);
+      } else {
+        showToast(data.error || 'Error unassigning pathway.', 'danger');
+      }
+    });
+}
+
+// ── Remove single course ──────────────────────────────────────────────────────
+document.querySelectorAll('.remove-course-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const statusId   = this.dataset.statusId;
+    const courseName = this.dataset.courseName;
+    showConfirm('Remove Course',
+      `Remove <strong>${courseName}</strong> from this employee's training plan?`,
+      () => removeCourse(statusId)
+    );
+  });
+});
+
+function removeCourse(statusId) {
+  postJSON('{% url "api_remove_course" %}', { status_id: statusId })
+    .then(data => {
+      if (data.success) {
+        showToast('Course removed.');
+        setTimeout(() => location.reload(), 800);
+      } else {
+        showToast(data.error || 'Error removing course.', 'danger');
+      }
+    });
+}
+</script>
+{% endblock %}
