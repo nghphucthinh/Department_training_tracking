@@ -22,6 +22,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -63,6 +64,8 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'vnat_teg_af_database'),
         'USER': os.getenv('DB_USER', 'i456en9l4kalgwq0qarl_admin'),
         'PASSWORD': os.getenv('DB_PASS', ''),
+        'CONN_MAX_AGE': 60,          # Reuse DB connections for 60 s
+        'CONN_HEALTH_CHECKS': True,  # Validate connection before reuse
         'OPTIONS': {
             'sslmode': os.getenv('DB_SSLMODE', 'require'),
             # Use quoted schema name because VNAT_TEGAF_JTP is mixed-case
@@ -82,14 +85,27 @@ SESSION_COOKIE_SAMESITE = 'Lax'
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'jtp' / 'static']
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# ── Media files ───────────────────────────────────────────────────────────────
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # ── i18n ──────────────────────────────────────────────────────────────────────
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Ho_Chi_Minh'
 USE_I18N = True
 USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# ── Cache ─────────────────────────────────────────────────────────────────────
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'jtp-cache',
+        'TIMEOUT': 3600,  # 1 hour
+    }
+}
 
 # ── inf_data table configuration ──────────────────────────────────────────────
 # Adjust these environment variables if your inf_data table uses different column names
